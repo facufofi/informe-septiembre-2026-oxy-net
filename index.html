@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Informe operativo comercial de Oxy Net para septiembre de 2026.">
+<title>Oxy Net · Informe septiembre 2026</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+:root{
+  --navy:#003285;--dark:#002366;--blue:#008bd2;--mid:#5e8faf;--ink:#253848;--muted:#66798a;
+  --line:#d7e5f0;--surface:#fff;--bg:#edf5fb;--pale:#eef7fd;--green:#287a5c;--green-soft:#e8f5ef;
+  --amber:#a56707;--amber-soft:#fff4d9;--red:#a53a3a;--red-soft:#fff0f0;--shadow:0 14px 28px rgba(13,55,88,.13);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;font-family:Montserrat,"Segoe UI",Arial,sans-serif;background:linear-gradient(180deg,#e8f2f9,#f9fbfd 48%,#eaf3fa);color:var(--ink)}
+.wrap{max-width:1280px;margin:auto;padding:22px}.hero{position:relative;overflow:hidden;border-radius:30px;background:linear-gradient(120deg,var(--dark),#075891 58%,#75a2c1);box-shadow:var(--shadow);padding:26px;color:#fff}.hero:after{content:"";position:absolute;right:-115px;top:-145px;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.12)}
+.brand{position:relative;z-index:1;display:flex;align-items:center;gap:20px;flex-wrap:wrap}.logoBox{padding:12px 17px;border-radius:17px;background:rgba(255,255,255,.96);box-shadow:0 8px 18px rgba(0,0,0,.18)}.logoBox img{display:block;width:225px;max-width:60vw;height:auto}h1{margin:0 0 8px;font-size:2rem;line-height:1.08}.hero p{max-width:850px;margin:0;color:#eef7ff;line-height:1.5}.heroMeta{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.heroMeta span{padding:7px 11px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.13);font-size:.82rem;font-weight:700}
+.section{margin-top:28px}.sectionHead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:14px}h2{margin:0;font-size:1.45rem;color:var(--navy)}h3{margin:0 0 10px;font-size:1.06rem;color:var(--navy)}.lead{max-width:930px;margin:5px 0 0;color:var(--muted);line-height:1.55}
+.grid{display:grid;gap:16px}.grid>*{min-width:0}.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}.two{grid-template-columns:1.08fr .92fr}.equalTwo{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card,.kpi{border:1px solid var(--line);border-radius:22px;background:var(--surface);box-shadow:var(--shadow);padding:18px}.kpi.primary{border:0;background:linear-gradient(155deg,#064d86,#78a4c2);color:#fff}.kpiLabel{color:var(--muted);font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.primary .kpiLabel{color:#eaf6ff}.kpiValue{margin-top:4px;color:var(--blue);font-size:2rem;font-weight:800}.primary .kpiValue{color:#fff}.kpiText{color:var(--muted);font-size:.86rem;line-height:1.42}.primary .kpiText{color:#eef7ff}.delta{display:inline-flex;margin-top:8px;padding:5px 8px;border-radius:999px;background:var(--green-soft);color:var(--green);font-size:.75rem;font-weight:800}.delta.down{background:var(--red-soft);color:var(--red)}.delta.warn{background:var(--amber-soft);color:var(--amber)}
+.textBlock{color:#314d65;font-size:.94rem;line-height:1.62}.textBlock p{margin:0 0 10px}.callout{padding:14px 15px;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:17px;background:linear-gradient(180deg,#f4f9fd,#fff);color:#314d65;line-height:1.55}.callout strong{color:var(--navy)}.callout.good{border-left-color:var(--green)}.callout.attn{border-left-color:var(--amber)}.callout.risk{border-left-color:var(--red)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px;color:var(--muted);font-size:.85rem}.dot{display:inline-block;width:10px;height:10px;margin-right:6px;border-radius:50%}.dot.col{background:var(--blue)}.dot.ret{border:1px solid #b9c8d5;background:#d3dde6}.dot.line{background:var(--green)}.comboChart{display:block;width:100%;height:auto;padding:7px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(180deg,#fbfdff,#eef6fc)}.gridline{stroke:#cddce8;stroke-width:1}.axisText{font:12px Montserrat,Arial;fill:#63798d}.bar.col{fill:#008bd2;opacity:.9}.bar.ret{fill:#d3dde6}.barLabel{font:700 10px Montserrat,Arial;fill:#37536a}.saldoLine{fill:none;stroke:#287a5c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.saldoDot{fill:#287a5c;stroke:#fff;stroke-width:2}.saldoLabel{font:800 10px Montserrat,Arial;fill:#287a5c}
+.splitHero{display:grid;grid-template-columns:1fr 1fr;gap:13px}.bigFact{padding:18px;border-radius:19px;background:linear-gradient(155deg,#075996,#81aac6);color:#fff}.bigFact b{display:block;font-size:2.55rem;line-height:1}.bigFact span{display:block;margin-top:8px;line-height:1.45}.miniFacts{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.miniFact{padding:12px;border:1px solid var(--line);border-radius:16px;background:#fbfdff}.miniFact b{display:block;color:var(--navy);font-size:1.25rem}.miniFact span{color:var(--muted);font-size:.78rem;line-height:1.35}
+.barList{display:grid;gap:10px}.barRow{display:grid;grid-template-columns:205px 1fr 62px;gap:9px;align-items:center}.barName{font-size:.86rem;font-weight:700}.barTrack{height:14px;overflow:hidden;border:1px solid var(--line);border-radius:999px;background:#eef4fa}.barFill{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#8fd0f3,#0d5d9e)}.barFill.neg{background:linear-gradient(90deg,#e3e8ec,#73899b)}.barFill.green{background:linear-gradient(90deg,#8ac7ad,#287a5c)}.barVal{text-align:right;color:var(--blue);font-weight:800}.barVal.neg{color:#697f91}
+.decomp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.decomp>div{padding:12px;border:1px solid var(--line);border-radius:15px;background:#fff;text-align:center}.decomp b{display:block;color:var(--navy);font-size:1.45rem}.decomp span{color:var(--muted);font-size:.75rem;font-weight:700}.pos{color:var(--green)!important}.neg{color:var(--red)!important}
+.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:17px}table{width:100%;min-width:650px;border-collapse:collapse;background:#fff}th,td{padding:10px 11px;border-bottom:1px solid #e4edf4;text-align:left;font-size:.83rem;vertical-align:top}th{background:#edf6fd;color:var(--navy);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase}tr:last-child td{border-bottom:0}td.num{text-align:right;font-weight:800}.code{color:var(--navy);font-weight:800}.signal{display:inline-flex;padding:4px 7px;border-radius:999px;background:var(--pale);color:var(--navy);font-size:.7rem;font-weight:800;white-space:nowrap}.signal.good{background:var(--green-soft);color:var(--green)}.signal.risk{background:var(--red-soft);color:var(--red)}.signal.warn{background:var(--amber-soft);color:var(--amber)}
+.metricList{display:grid;gap:10px}.metricItem{display:flex;gap:11px;align-items:flex-start;padding:11px;border:1px solid var(--line);border-radius:15px;background:#fbfdff}.metricNum{min-width:50px;padding:8px 6px;border-radius:13px;background:var(--navy);color:#fff;text-align:center;font-weight:800}.metricItem p{margin:0;color:#3e586d;line-height:1.45}.rank{display:grid;gap:8px}.rankRow{display:grid;grid-template-columns:32px 1fr 64px;gap:8px;align-items:center;padding:9px 10px;border:1px solid var(--line);border-radius:13px;background:#fff}.rankNo{display:grid;width:26px;height:26px;place-items:center;border-radius:50%;background:var(--pale);color:var(--blue);font-weight:800}.rankName{font-size:.85rem;font-weight:700}.rankValue{text-align:right;color:var(--navy);font-weight:800}.note{color:var(--muted);font-size:.79rem;line-height:1.5}.footer{margin:30px 0 8px;color:var(--muted);font-size:.82rem;text-align:center}
+.accessoryHero{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.driver{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid #e6eef5}.driver:last-child{border:0}.driver strong{font-size:.88rem}.driver span{color:var(--green);font-weight:800}.channelGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.channel{padding:13px;border:1px solid var(--line);border-radius:16px;background:#fbfdff}.channel h4{margin:0 0 7px;color:var(--navy);font-size:.9rem}.channel p{margin:0;color:#435e73;font-size:.82rem;line-height:1.48}
+@media(max-width:980px){.kpis,.two,.equalTwo,.three,.accessoryHero{grid-template-columns:1fr 1fr}.barRow{grid-template-columns:160px 1fr 55px}}
+@media(max-width:720px){.wrap{padding:11px}.hero{padding:18px;border-radius:22px}.brand{align-items:flex-start}.logoBox img{width:185px}h1{font-size:1.48rem}.hero p{font-size:.88rem}.sectionHead{align-items:flex-start;flex-direction:column}.kpis,.two,.equalTwo,.three,.splitHero,.accessoryHero,.channelGrid{grid-template-columns:1fr}.barRow{grid-template-columns:1fr;gap:4px}.barVal{text-align:left}.miniFacts{grid-template-columns:1fr 1fr}.decomp{grid-template-columns:1fr}.card,.kpi{padding:14px;border-radius:18px}.comboChart{min-width:620px}.chartScroll{overflow-x:auto}.heroMeta span{font-size:.74rem}}
+@media print{body{background:#fff}.wrap{max-width:none;padding:0}.hero,.card,.kpi{box-shadow:none}.section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="brand">
+      <div class="logoBox"><img src="logo.webp" alt="Oxy Net Oxigenoterapia"></div>
+      <div>
+        <h1>Reporte operativo comercial · septiembre 2026</h1>
+        <p>Lectura ejecutiva del flujo de equipos, las cuentas que explican el mes y las señales comerciales y operativas que requieren seguimiento.</p>
+        <div class="heroMeta"><span>Cierre: septiembre 2026</span><span>Comparativo: enero–septiembre</span><span>Unidad principal: equipos</span><span>Datos al 30/09/2026</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>1. Septiembre interrumpe la recuperación, pero no borra el avance de Q3</h2><p class="lead">Después del salto de agosto, bajan las colocaciones y vuelven a subir los retiros. El mes cierra en −13 equipos; el acumulado anual se mantiene positivo en +89.</p></div></div>
+    <div class="grid kpis">
+      <article class="kpi primary"><div class="kpiLabel">Colocaciones septiembre</div><div class="kpiValue">568</div><div class="kpiText">26 menos que en agosto.</div><span class="delta down">−4,4% mensual</span></article>
+      <article class="kpi"><div class="kpiLabel">Retiros septiembre</div><div class="kpiValue">581</div><div class="kpiText">Máximo mensual de 2026.</div><span class="delta down">+23,9% vs. agosto</span></article>
+      <article class="kpi"><div class="kpiLabel">Saldo septiembre</div><div class="kpiValue">−13</div><div class="kpiText">Cambio de 138 equipos frente al +125 de agosto.</div><span class="delta down">Reversión mensual</span></article>
+      <article class="kpi"><div class="kpiLabel">Saldo enero–septiembre</div><div class="kpiValue">+89</div><div class="kpiText">Q3 aporta +125 pese a septiembre.</div><span class="delta">Acumulado aún positivo</span></article>
+    </div>
+    <div class="grid two" style="margin-top:16px">
+      <article class="card"><h3>Colocaciones, retiros y saldo mensual</h3><div class="legend"><span><i class="dot col"></i>Colocaciones</span><span><i class="dot ret"></i>Retiros</span><span><i class="dot line"></i>Saldo</span></div><div class="chartScroll"><svg id="monthlyChart" class="comboChart" viewBox="0 0 820 360" role="img" aria-label="Evolución mensual de colocaciones, retiros y saldo durante 2026"></svg></div></article>
+      <article class="card"><h3>Qué cambia en septiembre</h3><div class="metricList">
+        <div class="metricItem"><div class="metricNum">1</div><p><strong>El deterioro viene de ambos lados.</strong> Hay 26 colocaciones menos y 112 retiros más que en agosto.</p></div>
+        <div class="metricItem"><div class="metricNum">2</div><p><strong>Q3 sigue siendo favorable.</strong> Julio, agosto y septiembre acumulan +125; el trimestre conserva la mitad de la mejora de Q2.</p></div>
+        <div class="metricItem"><div class="metricNum">3</div><p><strong>No es una caída generalizada.</strong> Tratamiento del sueño crece con fuerza; oxígeno, transporte y aspiración absorben ese avance.</p></div>
+      </div><div class="callout attn" style="margin-top:12px"><strong>Lectura ejecutiva:</strong> septiembre no cambia el rumbo anual, pero muestra que la expansión depende cada vez más de sueño y de pocas cuentas.</div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>2. Sueño aporta +126; el resto del portafolio resta −139</h2><p class="lead">CPAP, AutoCPAP y humidificadores vuelven a ser el motor estratégico. Sin ese bloque, el saldo mensual habría sido marcadamente negativo.</p></div></div>
+    <div class="grid two">
+      <article class="card"><div class="splitHero"><div class="bigFact"><b>+126</b><span>saldo conjunto de la familia sueño<br><strong>201 colocaciones · 75 retiros</strong></span></div><div class="miniFacts"><div class="miniFact"><b>+63</b><span>Humidificadores</span></div><div class="miniFact"><b>+43</b><span>CPAP</span></div><div class="miniFact"><b>+20</b><span>AutoCPAP</span></div><div class="miniFact"><b>−139</b><span>Resto de productos</span></div></div></div><div class="callout good" style="margin-top:14px"><strong>Señal estratégica:</strong> sueño supera incluso el impulso de agosto (+107). El problema del mes no está en esa línea de negocio sino en la contracción simultánea de oxígeno y soporte.</div></article>
+      <article class="card"><h3>Productos que explican el saldo</h3><div id="productBars" class="barList"></div><p class="note">Oxigenador adulto (−48), concentrador de oxígeno (−29), transporte (−14) y aspirador eléctrico (−10) explican la mayor parte del retroceso.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>3. C7746 acelera; las grandes cuentas de oxígeno explican la caída</h2><p class="lead">Los diez mayores crecimientos suman +182 y las diez principales bajas −142. El resto de la cartera aporta −53 y lleva el total a −13.</p></div></div>
+    <div class="grid three">
+      <article class="card"><h3>Descomposición del mes</h3><div class="decomp"><div><b class="pos">+182</b><span>Top 10 positivos</span></div><div><b class="neg">−142</b><span>Top 10 negativos</span></div><div><b class="neg">−53</b><span>Resto de la cartera</span></div></div><div class="callout attn" style="margin-top:14px"><strong>Concentración:</strong> C7746, C0999 y C0833 aportan +151. C7764, C0422 y C0829 restan −71.</div></article>
+      <article class="card"><h3>C7746 · Particulares OSDE</h3><div class="bigFact"><b>+106</b><span>septiembre · <strong>+337 acumulado</strong></span></div><p class="textBlock">Nuevo máximo mensual: 144 colocaciones y 38 retiros. El avance se concentra en humidificadores (+52), CPAP (+37) y AutoCPAP (+17).</p></article>
+      <article class="card"><h3>C7764 · OSDE Proveedor</h3><div class="bigFact"><b>−26</b><span>septiembre · <strong>−84 acumulado</strong></span></div><p class="textBlock">Revierte el +33 de agosto. Concentrador de oxígeno (−12), oxigenador adulto (−8) y transporte (−4) explican la baja.</p></article>
+    </div>
+    <div class="grid equalTwo" style="margin-top:16px">
+      <article class="card"><h3>Top 10 cuentas que crecieron</h3><div class="tableWrap"><table><thead><tr><th>Cuenta</th><th>Cliente</th><th>Sep.</th><th>Lectura anual / mensual</th></tr></thead><tbody id="positiveAccounts"></tbody></table></div></article>
+      <article class="card"><h3>Top 10 cuentas que cayeron</h3><div class="tableWrap"><table><thead><tr><th>Cuenta</th><th>Cliente</th><th>Sep.</th><th>Lectura anual / mensual</th></tr></thead><tbody id="negativeAccounts"></tbody></table></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>4. La concentración de cartera sigue siendo estructural</h2><p class="lead">Los cinco mayores clientes reúnen 5.170 equipos instalados. Ocho cuentas continúan representando aproximadamente la mitad del parque.</p></div></div>
+    <div class="grid two">
+      <article class="card"><h3>Principales cuentas por stock instalado</h3><div id="stockAccounts" class="rank"></div><div class="callout attn" style="margin-top:13px"><strong>Implicancia:</strong> las variaciones de C7764, C0829 y C7726 tienen efecto material aun cuando el movimiento mensual parezca moderado.</div></article>
+      <article class="card"><h3>Lectura de las cuentas críticas</h3><div class="metricList">
+        <div class="metricItem"><div class="metricNum">−26</div><p><strong>C7764 · OSDE Proveedor.</strong> Es la mayor cuenta y vuelve a caer tras la recuperación de agosto.</p></div>
+        <div class="metricItem"><div class="metricNum">−22</div><p><strong>C0829 · PAMI.</strong> La baja profundiza el acumulado anual negativo, relevante por su volumen instalado.</p></div>
+        <div class="metricItem"><div class="metricNum">−14</div><p><strong>C7726 · OBSBA.</strong> Septiembre reduce parte de la expansión acumulada, aunque el año conserva signo positivo (+44).</p></div>
+      </div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>5. Accesorios crece por un salto concentrado, no por los kits de C0999</h2><p class="lead">La tabla detallada pasa de 1.735 a 2.236 unidades: +501 (+28,9%). El crecimiento se concentra en un producto y en pocas cuentas, por lo que no debe leerse como una expansión homogénea de la demanda.</p></div></div>
+    <div class="accessoryHero">
+      <article class="card"><div class="splitHero"><div class="bigFact"><b>+501</b><span>variación del detalle<br><strong>+28,9% vs. agosto</strong></span></div><div class="miniFacts"><div class="miniFact"><b>+396</b><span>Nariz artificial</span></div><div class="miniFact"><b>79,0%</b><span>del aumento total</span></div><div class="miniFact"><b>+59</b><span>Kit alimentación</span></div><div class="miniFact"><b>+23</b><span>Manguera aspirador</span></div></div></div><div class="callout good" style="margin-top:14px"><strong>Motor principal:</strong> “nariz artificial” sube de 187 a 583 unidades. C0379 aporta 200, C7764 suma 82, C0248 llega a 180 y C0422 a 60.</div></article>
+      <article class="card"><h3>Cuentas que explican la variación</h3><div class="driver"><strong>C0379 · Palcare</strong><span>+195</span></div><div class="driver"><strong>C7764 · OSDE Proveedor</strong><span>+104</span></div><div class="driver"><strong>C0248 · OSPSA</strong><span>+62</span></div><div class="driver"><strong>C7710 · OSPECON</strong><span>+49</span></div><p class="note">Estas cuatro cuentas explican +410 unidades, 81,8% del aumento. En sentido contrario, C0031 resta 75, C7726 resta 35, C0833 resta 22 y C0829 resta 17.</p></article>
+    </div>
+    <div class="grid equalTwo" style="margin-top:16px">
+      <article class="card"><h3>Dos códigos, dos lecturas distintas</h3><div class="channelGrid">
+        <div class="channel"><h4>C0999 · Particulares</h4><p>La creación de kits de accesorios <strong>no tuvo impacto</strong>: no se vendió ningún kit diseñado y tampoco aumentó la demanda de sus componentes por esa iniciativa. La cuenta sube de 44 a 70 entregas, pero ese movimiento no debe atribuirse a los kits.</p></div>
+        <div class="channel"><h4>C9999 · Mercado Libre</h4><p>Septiembre incorpora por primera vez ventas de máscaras de CPAP mediante Mercado Libre. Este canal explica parte del aumento comercial de accesorios y debe medirse por separado de C0999.</p></div>
+      </div><div class="callout attn" style="margin-top:12px"><strong>Próximo control:</strong> separar en el tablero las ventas de Mercado Libre por modelo de máscara, unidades, margen y recurrencia para medir el canal sin mezclarlo con entregas de convenios.</div></article>
+      <article class="card"><h3>Los tres totales no coinciden</h3><div class="decomp"><div><b>2.236</b><span>tabla detalle</span></div><div><b>2.159</b><span>gráfico mensual</span></div><div><b>1.546</b><span>resumen Inicio</span></div></div><p class="textBlock" style="margin-bottom:0">Para explicar productos y cuentas se usa la <strong>tabla detallada</strong>, porque permite reconciliar los movimientos. La diferencia entre visuales debe corregirse antes de tratar el total de accesorios como KPI único.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>6. Ventas retrocede; reclamos mejora sin normalizar sueño</h2><p class="lead">Las variables complementarias acompañan una lectura más prudente del mes: baja el volumen vendido, mientras la calidad mejora parcialmente.</p></div></div>
+    <div class="grid three">
+      <article class="card"><h3>Ventas</h3><div class="kpiValue">81</div><p class="textBlock">Septiembre registra 59 equipos nuevos y 22 usados: 47 menos que agosto (−36,7%).</p><div class="barList"><div class="barRow"><span class="barName">Transporte</span><span class="barTrack"><i class="barFill" style="width:100%"></i></span><span class="barVal">48</span></div><div class="barRow"><span class="barName">Humidificador</span><span class="barTrack"><i class="barFill" style="width:23%"></i></span><span class="barVal">11</span></div><div class="barRow"><span class="barName">CPAP</span><span class="barTrack"><i class="barFill" style="width:19%"></i></span><span class="barVal">9</span></div><div class="barRow"><span class="barName">AutoCPAP</span><span class="barTrack"><i class="barFill" style="width:8%"></i></span><span class="barVal">4</span></div></div><p class="note">La caída se explica especialmente por concentradores portátiles (30 → 2) y oxigenadores (13 → 3). Transporte se sostiene: 47 → 48.</p></article>
+      <article class="card"><h3>Reclamos</h3><div class="kpiValue">228</div><p class="textBlock">Bajan 18 frente a agosto (−7,3%) y vuelven al nivel de febrero.</p><div class="callout attn"><strong>Sueño mejora, pero sigue alto:</strong> CPAP, AutoCPAP y humidificador suman 22 reclamos, contra 25 en agosto y 12 en julio.</div><p class="note">Concentrador de oxígeno mejora con fuerza: 76 → 56. Oxigenador adulto sube de 14 a 25 y concentrador portátil de 12 a 18.</p></article>
+      <article class="card"><h3>Pedidos CPAP y máscaras</h3><div class="miniFacts"><div class="miniFact"><b>79</b><span>Órdenes consultorio</span></div><div class="miniFact"><b>36</b><span>CPAP sin prueba</span></div><div class="miniFact"><b>107</b><span>Equipos y variantes</span></div><div class="miniFact"><b>77</b><span>Pedidos sólo máscara</span></div></div><p class="note">En consultorio predominan alquileres (71). En CPAP sin prueba se registran 25 alquileres, 3 ventas nuevas y 8 usadas.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHead"><div><h2>7. Agenda de gestión para octubre</h2><p class="lead">La prioridad es sostener el crecimiento rentable de sueño y distinguir los movimientos estructurales de los saltos puntuales.</p></div></div>
+    <div class="grid equalTwo">
+      <article class="card"><div class="metricList">
+        <div class="metricItem"><div class="metricNum">1</div><p><strong>Explicar los retiros de oxígeno.</strong> Revisar C7764, C0422, C0829, C0349 y C7726 por auditorías, cambios de proveedor, regularizaciones o depuración de padrón.</p></div>
+        <div class="metricItem"><div class="metricNum">2</div><p><strong>Proteger la capacidad de sueño.</strong> C7746 acelera y la familia aporta +126; validar abastecimiento, instalación y soporte postventa.</p></div>
+        <div class="metricItem"><div class="metricNum">3</div><p><strong>Auditar el salto de accesorios.</strong> Confirmar la causa operativa de nariz artificial y las cuatro cuentas que concentran el aumento.</p></div>
+      </div></article>
+      <article class="card"><div class="metricList">
+        <div class="metricItem"><div class="metricNum">4</div><p><strong>Medir Mercado Libre como canal.</strong> Crear seguimiento específico de C9999 para máscaras CPAP: unidades, modelos, margen, recompra y costo de adquisición.</p></div>
+        <div class="metricItem"><div class="metricNum">5</div><p><strong>Replantear los kits de C0999.</strong> Como no hubo ventas ni tracción sobre componentes, revisar propuesta, precio, comunicación y segmentación antes de ampliar stock.</p></div>
+        <div class="metricItem"><div class="metricNum">6</div><p><strong>Unificar el KPI de accesorios.</strong> Resolver por qué Inicio, el gráfico mensual y las tablas detalladas informan tres totales distintos.</p></div>
+      </div></article>
+    </div>
+  </section>
+
+  <footer class="footer">Oxy Net · Reporte operativo comercial · Septiembre 2026</footer>
+</div>
+<script>
+const months=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep"];
+const placements=[446,372,432,439,473,616,555,594,568];
+const withdrawals=[545,476,518,417,390,468,542,469,581];
+const balances=[-99,-104,-86,22,83,148,13,125,-13];
+const productData=[["Humidificador",63],["CPAP",43],["AutoCPAP",20],["Concentrador portátil",6],["Asistente de tos",3],["Aspirador batería",-7],["Alto flujo",-7],["Aspirador eléctrico",-10],["Equipo transporte",-14],["Concentrador O₂",-29],["Oxigenador adulto",-48]];
+const positive=[
+ ["C7746","Particulares OSDE",106,"+337 anual · aceleración de sueño","good"],["C0999","Particulares",25,"+77 anual · expansión; no atribuible a kits","warn"],["C0833","FEMAPE",20,"+94 anual · máximo mensual","good"],["C7732","IOMA FEMAPE Voluntarios",8,"+30 anual · continuidad","good"],["C0320","WIOR",6,"Reversión favorable; año cerca del equilibrio","warn"],["C0107","INTROMED",4,"Crecimiento diversificado en cuatro equipos","good"],["C0232","OSPSA Filial Norte",4,"Expansión mensual","good"],["C0073","SIDOM SA",3,"Recuperación mensual","warn"],["C0096","OSUTHGRA",3,"Recuperación parcial","warn"],["C0305","OSDEPYM",3,"+8 anual · continuidad","good"]
+];
+const negative=[
+ ["C7764","OSDE Proveedor",-26,"−84 anual · revierte agosto","risk"],["C0422","Región Sanitaria XII",-23,"+65 anual · baja sobre base positiva","warn"],["C0829","INSSJP / PAMI",-22,"−71 anual · contracción persistente","risk"],["C0349","AIRMED",-17,"Caída material del mes","risk"],["C7726","OBSBA",-14,"+44 anual · recorta crecimiento","warn"],["C0193","OSDE Filial Zárate",-11,"Caída material del mes","risk"],["C0623","IN SITU Logística",-9,"Contracción mensual","risk"],["C0679","Cuenta C0679",-8,"Contracción mensual","risk"],["C0002","Obra Social de Pasteleros",-7,"Contracción mensual","risk"],["C0804","Neumint",-5,"Contracción mensual","risk"]
+];
+const stock=[["C7764 · OSDE Proveedor",2650],["C0829 · INSSJP / PAMI",826],["C7726 · OBSBA",678],["C0833 · FEMAPE",554],["C0999 · Particulares",462]];
+function drawMonthly(){const svg=document.getElementById("monthlyChart"),W=820,H=360,p={l:46,r:22,t:27,b:48},cw=W-p.l-p.r,ch=H-p.t-p.b,max=650,minSaldo=-120,maxSaldo=170;let s="";[0,200,400,600].forEach(v=>{const y=p.t+ch-(v/max)*ch;s+=`<line x1="${p.l}" y1="${y}" x2="${W-p.r}" y2="${y}" class="gridline"/><text x="${p.l-9}" y="${y+4}" text-anchor="end" class="axisText">${v}</text>`});const step=cw/months.length,bw=step*.25,pts=[];months.forEach((m,i)=>{const x=p.l+i*step+step*.14,y1=p.t+ch-(placements[i]/max)*ch,y2=p.t+ch-(withdrawals[i]/max)*ch,sy=p.t+ch-((balances[i]-minSaldo)/(maxSaldo-minSaldo))*ch;pts.push(`${x+step*.34},${sy}`);s+=`<rect x="${x}" y="${y1}" width="${bw}" height="${p.t+ch-y1}" rx="4" class="bar col"/><rect x="${x+bw+5}" y="${y2}" width="${bw}" height="${p.t+ch-y2}" rx="4" class="bar ret"/><text x="${x+bw/2}" y="${y1-6}" text-anchor="middle" class="barLabel">${placements[i]}</text><text x="${x+bw*1.5+5}" y="${y2-6}" text-anchor="middle" class="barLabel">${withdrawals[i]}</text><text x="${x+step*.34}" y="${p.t+ch+25}" text-anchor="middle" class="axisText">${m}</text>`});s+=`<polyline points="${pts.join(" ")}" class="saldoLine"/>`;pts.forEach((pt,i)=>{const [x,y]=pt.split(",");s+=`<circle cx="${x}" cy="${y}" r="5" class="saldoDot"/><text x="${x}" y="${+y-9}" text-anchor="middle" class="saldoLabel">${balances[i]>0?"+":""}${balances[i]}</text>`});svg.innerHTML=s}
+function drawBars(){const max=Math.max(...productData.map(x=>Math.abs(x[1])));document.getElementById("productBars").innerHTML=productData.map(([n,v])=>`<div class="barRow"><span class="barName">${n}</span><span class="barTrack"><i class="barFill ${v<0?"neg":""}" style="width:${Math.max(6,Math.abs(v)/max*100)}%"></i></span><span class="barVal ${v<0?"neg":""}">${v>0?"+":""}${v}</span></div>`).join("")}
+function accountRows(data,target){document.getElementById(target).innerHTML=data.map(([c,n,v,t,tag])=>`<tr><td class="code">${c}</td><td>${n}</td><td class="num ${v>0?"pos":"neg"}">${v>0?"+":""}${v}</td><td><span class="signal ${tag}">${t}</span></td></tr>`).join("")}
+function stockRows(){document.getElementById("stockAccounts").innerHTML=stock.map(([n,v],i)=>`<div class="rankRow"><span class="rankNo">${i+1}</span><span class="rankName">${n}</span><span class="rankValue">${v.toLocaleString("es-AR")}</span></div>`).join("")}
+drawMonthly();drawBars();accountRows(positive,"positiveAccounts");accountRows(negative,"negativeAccounts");stockRows();
+</script>
+</body>
+</html>
